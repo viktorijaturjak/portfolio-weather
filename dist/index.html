@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34314d336b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Weather Report</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>weather report</h1>
+        <div class="input-box">
+            <select name="input-city" id="input-city" onchange="refreshWeather()">
+                <option value="zagreb" selected>Zagreb</option>
+                <option value="osijek">Osijek</option>
+                <option value="split">Split</option>
+                <option value="rijeka">Rijeka</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- CITY -->
+    <div class="city" id="current-weather"></div>
+
+    <!-- ICONS -->
+    <div class="icons" id="daily-forcast"></div>
+
+    <script src="js/helpers.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    // HEADER 
+
+    .header {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 1.5rem !important;
+            margin-left: 1rem !important;
+        }
+
+        .input-box {
+            margin-right: 1rem !important;
+        }
+    }
+
+    // CITY
+
+    .city {
+        max-width: 65%;
+        margin: 0 auto;
+        display: flex !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .heading-box {
+            text-align: left;
+        }
+
+        .content-box {
+            text-align: left;
+        }
+    }
+
+    // ICONS 
+
+    .icons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .icon-flex {
+            flex-direction: column !important;
+            
+            .icon-content {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1700px) {
+
+    // HEADER 
+
+    .header {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2rem !important;
+            margin-left: 3rem !important;
+        }
+
+        .input-box {
+            margin-right: .5rem !important;
+            margin-right: 3rem !important;
+        }
+    }
+
+    // CITY
+
+    .city {
+        max-width: 65%;
+        margin: 0 auto;
+        display: flex !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .heading-box {
+            text-align: left;
+
+            .name {
+                font-size: 2.5rem !important;
+            }
+
+            .temperature {
+                font-size: 5.5rem !important;
+            }
+
+            .feeling {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        .content-box {
+            text-align: left;
+
+            p {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+
+    // ICONS
+
+    .icons {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+
+        .icon-flex {
+            display: flex;
+            flex-direction: column !important;
+
+            .icon-content {
+                text-align: center;
+
+                .white {
+                    font-size: 1.2rem !important;
+
+                    span {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1701px) {
+
+    // HEADER 
+
+    .header {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5rem !important;
+            margin-left: 3rem !important;
+        }
+
+        .input-box {
+            margin-right: .5rem !important;
+            margin-right: 3rem !important;
+        }
+    }
+
+    // CITY
+
+    .city {
+        max-width: 65%;
+        margin: 0 auto;
+        display: flex !important;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .heading-box {
+            text-align: left;
+
+            .name {
+                font-size: 3rem !important;
+            }
+
+            .temperature {
+                font-size: 6rem !important;
+            }
+
+            .feeling {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .content-box {
+            text-align: left;
+
+            p {
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    // ICONS
+
+    .icons {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-flex {
+            display: flex;
+            flex-direction: column !important;
+
+            .icon-content {
+                text-align: center;
+                margin-top: -1rem;
+
+                .white {
+                    font-size: 1.2rem !important;
+
+                    span {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
