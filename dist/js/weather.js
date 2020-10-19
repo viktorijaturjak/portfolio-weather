@@ -40,7 +40,7 @@ function handleCurrent(data, city) {
     document.getElementById('current-weather').innerHTML = `
         <div class="heading-box">
             <p class="name">${capitalizeFirstLetter(city)}</p>
-            <p class="temperature">${data['temp']} &#8451;</p>
+            <p class="temperature">${data['temp']}&#8451;</p>
             <p class="feeling">Feels like: ${data['feels_like']} &#8451;</p>
         </div>
         <div class="content-box">
