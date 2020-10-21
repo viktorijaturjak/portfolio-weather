@@ -40,8 +40,8 @@ function handleCurrent(data, city) {
     document.getElementById('current-weather').innerHTML = `
         <div class="heading-box">
             <p class="name">${capitalizeFirstLetter(city)}</p>
-            <p class="temperature">${data['temp']}&#8451;</p>
-            <p class="feeling">Feels like: ${data['feels_like']} &#8451;</p>
+            <p class="temperature">${Math.round(data['temp'])}&#8451;</p>
+            <p class="feeling">Feels like: ${Math.round(data['feels_like'])} &#8451;</p>
         </div>
         <div class="content-box">
             <p>Sunrise: ${timestampToTime(data['sunrise'])}</p>
@@ -66,9 +66,9 @@ function handleDaily(data) {
             ${weatherIcon}
             <div class="icon-content">
                 <p class="white"><span>${timestampToDayOfWeek(data[i]['dt'])},${'<br>' + timestampToDate(data[i]['dt'])}</span><br>
-                ${data[i]['temp']['day']} &#8451; - ${weatherCondition}<br>
-                Min: ${data[i]['temp']['min']} &#8451;<br>
-                Max: ${data[i]['temp']['max']} &#8451;<br>
+                ${Math.round(data[i]['temp']['day'])} &#8451; - ${weatherCondition}<br>
+                Min: ${Math.round(data[i]['temp']['min'])} &#8451;<br>
+                Max: ${Math.round(data[i]['temp']['max'])} &#8451;<br>
                 Pressure: ${data[i]['pressure']} hPa<br>
                 Humidity: ${data[i]['humidity']}%<br>
                 Wind Speed: ${data[i]['wind_speed']} m/s</p>
